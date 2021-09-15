@@ -2,7 +2,7 @@
 
 <html lang="en">
     <head>
-        <title>Landing Page</title>
+        <title>Awesome Cats</title>
         <meta charset="UTF-8">
         <link href="css/styles.css" rel="stylesheet">
     </head>
@@ -12,9 +12,9 @@
             <nav>
                 <ul class="link-container">
                     <li class="link"><a href=""><img src="images/cat-logo.png" alt="cat logo" id="logo"></a></li>
-                    <li class="link"><a href="#">header link one</a></li>
-                    <li class="link"><a href="#">header link two</a></li>
-                    <li class="link"><a href="#">header link three</a></li>
+                    <li class="link"><a href="#info-section">Cute Cats</a></li>
+                    <li class="link"><a href="#quote-section">Cat Quote</a></li>
+                    <li class="link"><a href="#call-section">Blub!</a></li>
                 </ul>
             </nav>
         </header>
@@ -27,46 +27,52 @@
                         aliquyam erat, sed diam voluptua.</p>
                     <button>Sign up</button>
                 </div>
-                <img src="images/hero-cat.jpg" alt="screaming cat on a fence" id="hero-img">
-            </div>
-            <h2>Some random information.</h2>
-            <div class="flex-container">
-                <div class="flex-item">
-                    <img src="images/fluff-cat.jpg" alt="" class="img">
-                    <div class="text">
-                        Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                    </div>
-                </div>
-                <div class="flex-item">
-                    <img src="images/blanket-cat.jpg" alt="" class="img">
-                    <div class="text">
-                        Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                    </div>
-                </div>
-                <div class="flex-item">
-                    <img src="images/ginger-cat.jpg" alt="" class="img">
-                    <div class="text">
-                        Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                    </div>
-                </div>
-                <div class="flex-item">
-                    <img src="images/green-eyes-cat.jpg" alt="" class="img">
-                    <div class="text">
-                        Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                    </div>
+                <div class="img-container"> <!--this div is important(!) for correctly sizing the img-->
+                    <img src="images/hero-cat.jpg" alt="screaming cat on a fence" id="hero-img">
                 </div>
             </div>
-            <div>
+            <div id="info-section">
+                <h2>Look at those cute cats! Look at them!!</h2>
+                <div class="info-container">
+                    <div class="info-item">
+                        <img src="images/fluff-cat.jpg" alt="fluffy cat with grey eyes" class="img">
+                        <p class="text">
+                            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        </p>
+                    </div>
+                    <div class="info-item">
+                        <img src="images/blanket-cat.jpg" alt="black cat wrapped in a plaid blanket" class="img">
+                        <p class="text">
+                            Little cat burrito!
+                        </p>
+                    </div>
+                    <div class="info-item">
+                        <img src="images/ginger-cat.jpg" alt="orange tabby cat with closed eyes" class="img">
+                        <p class="text">
+                            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        </p>
+                    </div>
+                    <div class="info-item">
+                        <img src="images/green-eyes-cat.jpg" alt="cat with striking green eyes" class="img">
+                        <p class="text">
+                            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="quote-section">
                 <div class="quote-container">
                     <p>
                         Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
                         vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim
                         qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
                     </p>
-                    <p>- Thor, God of Thunder</p>
+                    <p class="person">
+                        - Thor, God of Thunder
+                    </p>
                 </div>
             </div>
-            <div>
+            <div id="call-section">
                 <div class="call-container">
                     <h3>Call to action!</h3>
                     <p>Sign up right now or it will be too late!</p>
@@ -77,10 +83,10 @@
         </main>
         <footer>
             Photo by <a href="https://unsplash.com/@lunarts?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Volodymyr Hryshchenko</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> 
-            Photo by <a href="https://unsplash.com/@hocza?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jozsef Hocza</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-            Photo by <a href="https://unsplash.com/@rafael_ishkhanyan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Rafael Ishkhanyan</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-            Photo by <a href="https://unsplash.com/@frolleinandersen?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Melanie Andersen</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
             Photo by <a href="https://unsplash.com/@luckybel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jean Luc Catarin</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            Photo by <a href="https://unsplash.com/@hocza?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jozsef Hocza</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            Photo by <a href="https://unsplash.com/@frolleinandersen?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Melanie Andersen</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            Photo by <a href="https://unsplash.com/@rafael_ishkhanyan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Rafael Ishkhanyan</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
         </footer>
     </body>
 </html>
