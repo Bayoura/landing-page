@@ -1,9 +1,8 @@
 * {
     --color-darkblue: #1F2937; /* hero and footer background, information header text colour, quote text colour */
     --color-blue: #3882F6; /* button colour, call to action background */
-    --color-grey: #E5E7EB; /* quote section background */
+    --color-grey: #E5E7EB; /* hero paragraph, header link text, quote section background */
     --color-white: #F9FAF8; /* hero h1 colour, header logo, button text */
-    --color-offwhite: #E5E7EB; /* hero paragraph, header link text */
     --size-veryBig: 3rem; /* 48px */
     --size-big: 2.25rem; /* 36px */
     --size-medium: 1.5rem; /* 24px */
