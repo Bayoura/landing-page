@@ -23,7 +23,7 @@ header {
     top: 0;
     z-index: 1;
     width: 100%;
-    padding: 5px 150px;
+    padding: 5px 200px;
     background-color: var(--color-darkblue);
 }
 
@@ -47,7 +47,7 @@ nav ul li:first-child {
 }
 
 a {
-    color: var(--color-offwhite);
+    color: var(--color-grey);
     text-decoration: none;
 }
 
@@ -58,13 +58,13 @@ a:hover {
 /* -------------------------------MAIN---------------------------------*/
 
 main {
-    margin-top: 200px;
+    margin-top: 150px;
 }
 
 .hero-container {
     display: flex;
     gap: 3rem;
-    padding: 0 150px;
+    padding: 0 200px; 
     margin-bottom: 100px;
 }
 
@@ -74,12 +74,13 @@ main {
 
 .hero-box > p {
     margin: 5px 0 20px 0;
-    color: var(--color-offwhite);
+    color: var(--color-grey);
 }
 
 #hero-img {
+    min-width: 50%;
+    max-width: 1200px;
     width: 100%;
-    object-fit: cover;
     border-radius: 4px;
 }
 
@@ -92,10 +93,7 @@ button {
     padding: 7px 10px;
     width: 120px;
     border-radius: 5px;
-}
-
-button:hover {
-    cursor: pointer;
+    font-weight: 500;
 }
 
 /*-------------------------------INFO-SECTION---------------------------------*/
@@ -103,8 +101,7 @@ button:hover {
 #info-section {
     color: var(--color-darkblue);
     background: var(--color-white);
-    padding-top: 50px;
-    padding-bottom: 100px;
+    padding: 50px 50px 100px 50px;
 }
 
 #info-section>h2 {
@@ -120,7 +117,6 @@ button:hover {
     justify-content: center;
     margin: 0 auto;
     gap: 50px;
-    max-width: 1192px;
 }
 
 .info-item {
@@ -139,8 +135,7 @@ button:hover {
 /*-------------------------------QUOTE-SECTION---------------------------------*/
 
 #quote-section {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding: 80px 80px 80px 80px;
     color: var(--color-darkblue);
     background: var(--color-grey);  
     font-size: var(--size-big);
@@ -151,14 +146,101 @@ button:hover {
 .quote-container {
     max-width: 1192px;
     margin: 0 auto;
-    text-align: justify;
 }
 
-.person {
+.source {
+    padding-top: 5px;
     font-size: var(--size-medium);
     font-style: normal;
     text-align: right;
     font-weight: 500;
 }
 
-/* look at those margin/padding tops and bottoms! is it uniform?*/
+/*-------------------------------CALL-SECTION---------------------------------*/
+
+#call-section {
+    background: var(--color-white);
+    padding: 70px 0 70px 0;
+}
+
+.call-container {
+    margin: 0 200px;
+    background: var(--color-blue);
+    border-radius: 5px;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.text-box > p {
+    color: var(--color-grey);
+    font-weight: 400;
+}
+
+.call-container > button {
+    border: 2px solid silver;
+    align-self: flex-end;
+}
+
+button:hover {
+    cursor: pointer;
+    background: #A66144;
+    border: none;
+}
+
+/*-------------------------------FOOTER---------------------------------*/
+
+footer {
+    text-align: center;
+    font-weight: 300;
+}
+
+.attribution {
+    padding: 20px 0 10px 0;
+    font-size: 0.875rem; /* 14px */
+}
+
+.credit {
+    font-size: 0.625rem; /* 10px */
+    padding: 5px;
+}
+
+footer a {
+    font-style: italic;
+    font-weight: 400;
+    color: #cddef8;
+}
+
+/*-------------------------------RESPONSIVE-DESIGN---------------------------------*/
+
+@media (max-width: 1200px) {
+
+    header {
+        padding: 5px 150px;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        padding: 0 150px; 
+    }
+
+    .call-container {
+        margin: 0 150px; 
+    }
+}
+
+@media (max-width: 880px) {
+
+    header {
+        padding: 5px 100px;
+    }
+
+    .hero-container {
+        padding: 0 100px; 
+    }
+
+    .call-container {
+        margin: 0 100px; 
+    }
+}
